@@ -1,0 +1,21 @@
+{
+  "name": "kurokai/weapp",
+  "description": "A SDK of WeChat mini app.",
+  "keywords": ["wechat","miniapp","wechat app"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JiaweiXS",
+      "email": "kurobafear@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": "^5.5.9 || ^7.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Kurokai\\WeApp\\": "src/"
+    }
+  }
+}
