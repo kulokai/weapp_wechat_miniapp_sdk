@@ -6,7 +6,7 @@
  * Time: 13:54
  */
 
-namespace KuroKai\WeApp\Api;
+namespace JiaweiXS\WeApp\Api;
 
 
 class TemplateMsg extends BaseApi

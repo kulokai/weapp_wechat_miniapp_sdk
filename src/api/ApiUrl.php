@@ -5,7 +5,7 @@
  * Time: 10:06
  */
 
-namespace KuroKai\WeApp\Api;
+namespace JiaweiXS\WeApp\Api;
 
 class ApiUrl{
 

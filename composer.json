@@ -1,6 +1,6 @@
 {
-  "name": "kurokai/weapp",
-  "description": "A SDK of WeChat mini app.",
+  "name": "jiaweixs/weapp",
+  "description": "一个微信小程序服务端SDK，集成小程序服务端所有接口。A SDK of WeChat mini app.",
   "keywords": ["wechat","miniapp","wechat app"],
   "license": "MIT",
   "authors": [
@@ -16,7 +16,7 @@
 
   "autoload": {
     "psr-4": {
-      "Kurokai\\": "src/"
+      "JiaweiXS\\WeApp\\": "src/"
     }
   }
 }

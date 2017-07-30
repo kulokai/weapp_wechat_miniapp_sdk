@@ -6,7 +6,7 @@
  * Time: 20:53
  */
 
-namespace KuroKai\WeApp\Api;
+namespace JiaweiXS\WeApp\Api;
 
 
 class Statistic extends BaseApi

@@ -6,13 +6,13 @@
  * Time: 10:04
  */
 
-namespace KuroKai\WeApp;
+namespace JiaweiXS\WeApp;
 
 
-use KuroKai\WeApp\Api\QRCode;
-use KuroKai\WeApp\Api\Statistic;
-use KuroKai\WeApp\Api\TemplateMsg;
-use Kurokai\SimpleCache\SimpleCache;
+use JiaweiXS\WeApp\Api\QRCode;
+use JiaweiXS\WeApp\Api\Statistic;
+use JiaweiXS\WeApp\Api\TemplateMsg;
+use JiaweiXS\SimpleCache\SimpleCache;
 
 class WeApp
 {

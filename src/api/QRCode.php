@@ -6,7 +6,7 @@
  * Time: 19:06
  */
 
-namespace KuroKai\WeApp\Api;
+namespace JiaweiXS\WeApp\Api;
 
 
 class QRCode extends BaseApi

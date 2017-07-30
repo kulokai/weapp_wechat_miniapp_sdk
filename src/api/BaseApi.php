@@ -6,10 +6,10 @@
  * Time: 17:39
  */
 
-namespace KuroKai\WeApp\Api;
+namespace JiaweiXS\WeApp\Api;
 
 
-use Kurokai\SimpleCache\SimpleCache;
+use JiaweiXS\SimpleCache\SimpleCache;
 
 class BaseApi
 {

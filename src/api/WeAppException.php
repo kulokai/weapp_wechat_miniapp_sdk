@@ -6,7 +6,7 @@
  * Time: 18:51
  */
 
-namespace KuroKai\WeApp\Api;
+namespace JiaweiXS\WeApp\Api;
 
 
 class WeAppException extends \Exception
