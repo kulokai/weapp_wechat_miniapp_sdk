@@ -16,7 +16,7 @@
 
   "autoload": {
     "psr-4": {
-      "Kurokai\\WeApp\\": "src/"
+      "Kurokai\\": "src/"
     }
   }
 }
