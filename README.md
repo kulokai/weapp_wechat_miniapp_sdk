@@ -75,7 +75,7 @@ $res_array = $qrcode->getQRCodeC($path,$width=null);
 ```
 3.4 数据统计相关接口
 ```php
-//从‘小程序’获取一个‘模板消息’单例对象
+//从‘小程序’获取一个‘数据统计’单例对象
 $statistic = $weapp.getStatistic();
   
 //1.获取每日数据概况趋势
