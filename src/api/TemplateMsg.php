@@ -55,4 +55,18 @@ class TemplateMsg extends BaseApi
 		return $this->sendRequestWithToken($url,$param);
 	}
 
+	public function send($touser,$template_id,$form_id,$data,$page=null,$color=null,$emphasis_keyword=null){
+		$url = ApiUrl::TEMPLATE_MSG_SEND;
+		$param = array(
+			'touser'=>$touser,
+			'template_id'=>$template_id,
+			'page'=>$page,
+			'form_id'=>$form_id,
+			'data'=>$data,
+			'color'=>$color,
+			'emphasis_keyword'=>$emphasis_keyword,
+		);
+		return $this->sendRequestWithToken($url,$param);
+	}
+
 }
