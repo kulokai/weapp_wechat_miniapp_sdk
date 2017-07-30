@@ -9,7 +9,9 @@
 namespace JiaweiXS\WeApp;
 
 
+use JiaweiXS\WeApp\Api\CustomMsg;
 use JiaweiXS\WeApp\Api\QRCode;
+use JiaweiXS\WeApp\Api\SessionKey;
 use JiaweiXS\WeApp\Api\Statistic;
 use JiaweiXS\WeApp\Api\TemplateMsg;
 use JiaweiXS\SimpleCache\SimpleCache;
@@ -28,7 +30,18 @@ class WeApp
 	}
 
 	/**
-	 * @return TemplateMsg 模板消息接口
+	 * @param $code
+	 * @return array sessionkey相关数组
+	 */
+	public function getSessionKey($code){
+		if(!isset($this->instance['sessionkey'])){
+			$this->instance['sessionkey'] = new SessionKey($this->appid,$this->secret);
+		}
+		return $this->instance['sessionkey']->get($code);
+	}
+
+	/**
+	 * @return TemplateMsg 模板消息对象
 	 */
 	public function getTemplateMsg(){
 		if(!isset($this->instance['template'])){
@@ -38,7 +51,7 @@ class WeApp
 	}
 
 	/**
-	 * @return QRCode 获取二维码接口
+	 * @return QRCode 二维码对象
 	 */
 	public function getQRCode(){
 		if(!isset($this->instance['qrcode'])){
@@ -48,13 +61,23 @@ class WeApp
 	}
 
 	/**
-	 * @return Statistic 数据统计接口
+	 * @return Statistic 数据统计对象
 	 */
 	public function getStatistic(){
 		if(!isset($this->instance['statistic'])){
 			$this->instance['statistic'] = new Statistic($this->appid,$this->secret);
 		}
 		return $this->instance['statistic'];
+	}
+
+	/**
+	 * @return CustomMsg 客户消息对象
+	 */
+	public function getCustomMsg(){
+		if(!isset($this->instance['custommsg'])){
+			$this->instance['custommsg'] = new CustomMsg($this->appid,$this->secret);
+		}
+		return $this->instance['custommsg'];
 	}
 
 }
