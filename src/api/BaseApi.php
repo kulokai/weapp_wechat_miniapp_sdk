@@ -13,8 +13,8 @@ use JiaweiXS\SimpleCache\SimpleCache;
 
 class BaseApi
 {
-	private $appid;
-	private $secret;
+	protected $appid;
+	protected $secret;
 
 	public function __construct($appid,$secret)
 	{
