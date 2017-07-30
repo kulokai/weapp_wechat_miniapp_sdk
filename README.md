@@ -48,3 +48,66 @@ $res_array = $templateMsg->del($template_id);
 $res_array = $templateMsg->send($touser,$template_id,$form_id,$data);
   
 ```
+3.2 客服消息相关接口
+```php
+//从‘小程序’获取一个‘模板消息’单例对象
+$customMsg = $weapp.getCustomMsg();
+  
+//1.发送客服消息 (微信对调用时机和次数都有限制，详情见微信文档)
+$res_array = $customMsg->send($touser,$msgtype,$content_array);
+  
+```
+3.3 二维码相关接口
+```php
+//从‘小程序’获取一个‘二维码’单例对象
+$qrcode = $weapp.getQRCode();
+  
+//1.获取小程序A码
+$res_array = $qrcode->getQRCodeA($path,$width=null,$auto_color=null,$line_color=null);
+  
+//2.获取小程序B码
+$res_array = $qrcode->getQRCodeB($scene,$page,$width=null,$auto_color=null,$line_color=null);
+  
+//3.获取小程序C码(二维码)
+$res_array = $qrcode->getQRCodeC($path,$width=null);
+  
+//注意数量限制 A码+C码：总共10万个 B码：无数量限制
+```
+3.4 数据统计相关接口
+```php
+//从‘小程序’获取一个‘模板消息’单例对象
+$statistic = $weapp.getStatistic();
+  
+//1.获取每日数据概况趋势
+$res_array = $statistic->getAbout($date);
+  
+//2.1 获取每日访问趋势
+$res_array = $statistic->getVisitDaily($date);
+  
+//2.2 获取每周访问趋势
+$res_array = $statistic->getVisitWeekly($begin_date,$end_date);
+  
+//2.3 获取每月访问趋势
+$res_array = $statistic->getVisitMonthly($begin_date,$end_date);
+  
+//3. 获取每日访问分布
+$res_array = $statistic->getDistribution($date);
+  
+//4.1 获取每日访问分布
+$res_array = $statistic->getRetainDaily($date);
+  
+//4.2 获取每周访问分布
+$res_array = $statistic->getRetainWeekly($begin_date,$end_date);
+  
+//4.3 获取每月访问分布
+$res_array = $statistic->getRetainMonthly($begin_date,$end_date);
+  
+//5. 获取每日访问页面
+$res_array = $statistic->getPage($date);
+  
+//6. 获取每日用户画像
+$res_array = $statistic->getUserFeature($date);
+  
+```
+## 参考文档
+1. 微信小程序文档 https://mp.weixin.qq.com/debug/wxadoc/dev/api/
