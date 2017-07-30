@@ -50,7 +50,7 @@ $res_array = $templateMsg->send($touser,$template_id,$form_id,$data);
 ```
 3.2 客服消息相关接口
 ```php
-//从‘小程序’获取一个‘模板消息’单例对象
+//从‘小程序’获取一个‘客服消息’单例对象
 $customMsg = $weapp.getCustomMsg();
   
 //1.发送客服消息 (微信对调用时机和次数都有限制，详情见微信文档)
