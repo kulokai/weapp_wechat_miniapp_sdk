@@ -23,8 +23,13 @@ $weapp = new WeApp('wxc123...','123456...','../storage/cache/');
 //code 换取 session_key
 $weapp->getSessionKey($code);
 ```
-#### 3. 其他接口的调用
-3.1 模板消息相关接口
+#### 3. 获取微信支付预支付码
+```php
+//coding
+```
+- [ ] 获取微信支付预支付码
+#### 4. 其他接口的调用
+4.1 模板消息相关接口
 ```php
 //从‘小程序’获取一个‘模板消息’单例对象
 $templateMsg = $weapp.getTemplateMsg();
@@ -48,7 +53,7 @@ $res_array = $templateMsg->del($template_id);
 $res_array = $templateMsg->send($touser,$template_id,$form_id,$data);
   
 ```
-3.2.1 客服消息相关接口
+4.2.1 客服消息相关接口
 ```php
 //从‘小程序’获取一个‘客服消息’单例对象
 $customMsg = $weapp.getCustomMsg();
@@ -57,13 +62,13 @@ $customMsg = $weapp.getCustomMsg();
 $res_array = $customMsg->send($touser,$msgtype,$content_array);
   
 ```
-3.2.2 客服消息更新计划：
+4.2.2 客服消息更新计划：
 - [ ] 实现接收客户消息和事件并解密
 - [ ] 实现新增临时素材
 - [ ] 实现获取临时素材
 - [ ] 转发消息
   
-3.3 二维码相关接口
+4.3 二维码相关接口
 ```php
 //从‘小程序’获取一个‘二维码’单例对象
 $qrcode = $weapp.getQRCode();
@@ -79,7 +84,7 @@ $res_array = $qrcode->getQRCodeC($path,$width=null);
   
 //注意数量限制 A码+C码：总共10万个 B码：无数量限制
 ```
-3.4 数据统计相关接口
+4.4 数据统计相关接口
 ```php
 //从‘小程序’获取一个‘数据统计’单例对象
 $statistic = $weapp.getStatistic();
