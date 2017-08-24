@@ -14,7 +14,7 @@ use JiaweiXS\WeApp\Api\QRCode;
 use JiaweiXS\WeApp\Api\SessionKey;
 use JiaweiXS\WeApp\Api\Statistic;
 use JiaweiXS\WeApp\Api\TemplateMsg;
-use JiaweiXS\SimpleCache\SimpleCache;
+use JiaweiXS\SimpleCache;
 
 class WeApp
 {

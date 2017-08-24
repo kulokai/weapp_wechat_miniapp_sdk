@@ -9,7 +9,7 @@
 namespace JiaweiXS\WeApp\Api;
 
 
-use JiaweiXS\SimpleCache\SimpleCache;
+use JiaweiXS\SimpleCache;
 
 class BaseApi
 {
