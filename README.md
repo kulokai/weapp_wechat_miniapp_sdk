@@ -122,3 +122,6 @@ $res_array = $statistic->getUserFeature($date);
 ```
 ## 参考文档
 1. 微信小程序文档 https://mp.weixin.qq.com/debug/wxadoc/dev/api/
+
+## 关于
+如果有遇到什么问题，欢迎来邮。 kurobafear@hotmail.com
