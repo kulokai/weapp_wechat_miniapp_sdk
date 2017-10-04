@@ -23,11 +23,11 @@ $weapp = new WeApp('wxc123...','123456...','../storage/cache/');
 //code 换取 session_key
 $weapp->getSessionKey($code);
 ```
-#### 3. 获取微信支付预支付码
+#### 3. 微信支付SDK推荐
+[wxpay/WXPay-SDK-PHP](https://github.com/wxpay/WXPay-SDK-PHP) (微信支付官方SDK)
 ```php
-//coding
+composer require "wxpay/wxpay:0.0.5" -vvv
 ```
-- [ ] 获取微信支付预支付码
 #### 4. 其他接口的调用
 4.1 模板消息相关接口
 ```php
