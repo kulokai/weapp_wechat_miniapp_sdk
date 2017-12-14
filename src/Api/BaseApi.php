@@ -56,13 +56,14 @@ class BaseApi
 	 * @param array $body_param
 	 * @param bool $is_post
 	 * @return mixed
+	 * @throws WeAppException
 	 */
 	public function sendHttpRequest($url,$url_param = null,$body_param = null,$is_post = true){
 		if($url_param){
 			$url_param = '?'.http_build_query($url_param);
 		}
 		if($body_param){
-			$body_param = json_encode($body_param);
+			$body_param = json_encode($body_param,JSON_UNESCAPED_UNICODE);
 		}
 		$ch = curl_init($url.$url_param);
 		curl_setopt($ch, CURLOPT_HEADER, 0);
