@@ -30,7 +30,7 @@ class ApiUrl{
 
 	//get qrcode of weapp
 	const GET_APP_CODE_A = 'https://api.weixin.qq.com/wxa/getwxacode';
-	const GET_APP_CODE_B = 'http://api.weixin.qq.com/wxa/getwxacodeunlimit';
+	const GET_APP_CODE_B = 'https://api.weixin.qq.com/wxa/getwxacodeunlimit';
 	const GET_QR_CODE_C = 'https://api.weixin.qq.com/cgi-bin/wxaapp/createwxaqrcode';
 
 	//statistic
